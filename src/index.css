@@ -1,0 +1,107 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+} 
+/* expense-item */
+.expense-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  background: #fff;
+  max-width: 350px;
+  flex-grow: 1; 
+}
+.expense-item.positive{
+  border-right: 4px solid green;
+}
+.expense-item.negative{
+  border-right: 4px solid red;
+}
+.expense-item-container{
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 400px;
+  gap: 10px;
+}
+.delete-btn{
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+.income-expense-container{
+  display: flex;
+  justify-content: space-around;
+  
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  background: #fff;
+  max-width: 350px;
+}
+.income,
+.expense{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.income .title,
+.expense .title{
+  font-size: 20px;
+  color: black;
+}
+.income{
+  color: green;
+
+}
+.expense{
+  color: red;
+
+}
+.block{
+  width: 2px;
+  border-radius: 20px;
+  background-color: grey;
+}
+.balance{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.input-container{
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+form input{
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+form button{
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: #ddd;
+}
+form .error{
+  color: red;
+  font-size: 12px;
+  margin: 0 0 0.75rem 0;
+}
