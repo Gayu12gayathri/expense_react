@@ -20,6 +20,8 @@ const App = ()=> {
       setExpenses(res.data)
     }).catch(err => console.log(err))
   },[])
+
+  console.log(expenses)
   
   const addExpense = (title,amount) => {
     const nextId = expenses[expenses.length - 1].id + 1
